@@ -1,0 +1,175 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, edited]
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  ai-declaration:
+    name: AI Declaration
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validate AI use declaration
+        env:
+          PR_BODY: ${{github.event.pull_request.body}}
+        run: |
+          noAISelected=0
+          aiSelected=0
+
+          if printf '%s\n' "$PR_BODY" | tr -d '\r' | grep -Eq '^- \[[xX]\] No AI-assisted tools were used to create this change\.$'; then
+            noAISelected=1
+          fi
+
+          if printf '%s\n' "$PR_BODY" | tr -d '\r' | grep -Eq '^- \[[xX]\] AI-assisted tools were used to create this change\.$'; then
+            aiSelected=1
+          fi
+
+          if [ "$noAISelected" -eq 0 ] && [ "$aiSelected" -eq 0 ]; then
+            echo "::error::AI use declaration must be answered."
+            exit 1
+          fi
+
+          if [ "$noAISelected" -eq 1 ] && [ "$aiSelected" -eq 1 ]; then
+            echo "::error::Select exactly one AI use declaration option."
+            exit 1
+          fi
+
+          echo "AI use declaration is valid."
+
+
+  ai-attribution:
+    name: AI Attribution
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: PR title is Conventional and an AI-declared PR carries an agent trailer
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          BASE: origin/${{ github.base_ref }}
+        run: |
+          if ! printf '%s\n' "$PR_TITLE" | grep -Eq '^(feat|fix|docs|style|refactor|test|chore|build|ci|perf|revert)(\([a-z0-9-]+\))?!?: \S'; then
+            echo "::error::PR title becomes the squash commit on main and must follow Conventional Commits."
+            exit 1
+          fi
+          if printf '%s\n' "$PR_BODY" | tr -d '\r' | grep -Eq '^- \[[xX]\] AI-assisted tools were used to create this change\.$'; then
+            count=$(git log "$BASE"..HEAD --format='%(trailers:key=Co-authored-by,valueonly)' | grep -ciE 'copilot|claude|anthropic|openai|codex' || true)
+            if [ "$count" -eq 0 ]; then
+              echo "::error::AI use is declared but no commit carries an agent Co-authored-by trailer."
+              exit 1
+            fi
+          fi
+          echo "AI attribution check passed."
+
+  lint-typecheck:
+    name: Lint & Typecheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Validate placeholders
+        run: pnpm run validate
+
+      - name: Lint
+        run: pnpm run lint
+
+      - name: Typecheck
+        run: pnpm run typecheck
+
+  test-frontend:
+    name: Frontend Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run frontend tests
+        run: pnpm run test:component
+
+  test-backend:
+    name: Backend Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run backend unit tests
+        run: pnpm run test
+
+  security:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Secret scan
+        uses: gitleaks/gitleaks-action@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Dependency vulnerability audit
+        # Temporary exception for GHSA-vfj7-8cjw-p6xm.
+        # This is only present through eslint-config-next dev tooling,
+        # and the advisory references braces >=3.0.4, which is not published.
+        run: pnpm audit --audit-level=high --ignore=GHSA-vfj7-8cjw-p6xm

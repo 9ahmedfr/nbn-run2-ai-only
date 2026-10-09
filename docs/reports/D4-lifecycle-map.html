@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D4 Lifecycle Map: eight stages at task level</title>
+<style>
+@font-face{font-family:'Poppins';font-weight:700;font-style:normal;font-display:swap;src:url(data:font/woff;base64,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) format('woff');}
+@font-face{font-family:'Poppins';font-weight:500;font-style:normal;font-display:swap;src:url(data:font/woff;base64,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) format('woff');}
+
+  :root {
+    --ink: #17162a; --muted: #6b6a80; --line: #e6e5f0; --bg: #f6f6fb; --card: #ffffff;
+    --peri: #6b5cff; --peri-2: #8f7bff; --peri-soft: #ece9ff; --coral: #ff5c8a; --coral-soft: #ffe3ec;
+    --peach: #ffb86b; --peach-soft: #fff0dc; --mint-soft: #dff7ea; --lilac-soft: #f1ecff; --sky-soft: #e4f0ff;
+    --red-bg: linear-gradient(135deg, #ffe4e4, #ffd3de); --red-fg: #8a1c2a; --red-line: #ff8aa3; --red-solid: #ff5c8a;
+    --amber-bg: linear-gradient(135deg, #fff1d2, #ffe1b8); --amber-fg: #7a4a00; --amber-line: #ffb86b; --amber-solid: #ffb04a;
+    --green-bg: linear-gradient(135deg, #dcf7e6, #c6f0dd); --green-fg: #0f5a30; --green-line: #62d09a; --green-solid: #3ec98a;
+    --shadow: 0 10px 30px rgba(45, 38, 110, 0.08), 0 1px 2px rgba(45, 38, 110, 0.06);
+    --shadow-lg: 0 24px 60px rgba(45, 38, 110, 0.12), 0 2px 4px rgba(45, 38, 110, 0.06);
+    --display: "Poppins", "Segoe UI", Inter, -apple-system, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { color-scheme: light; }
+  body { margin: 0; font: 15px/1.55 -apple-system, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif; color: var(--ink);
+    background-color: var(--bg);
+    background-image: linear-gradient(rgba(107,92,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(107,92,255,0.06) 1px, transparent 1px);
+    background-size: 44px 44px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 36px 24px 90px; }
+  h1, h2, h3, .display { font-family: var(--display); letter-spacing: -0.02em; }
+  h2 { font-size: 26px; font-weight: 700; margin: 52px 0 14px; line-height: 1.15; }
+  h2::before { content: ""; display: inline-block; width: 26px; height: 6px; border-radius: 3px; background: var(--coral); margin: 0 12px 6px 0; vertical-align: middle; }
+  h3 { font-size: 16px; font-weight: 700; margin: 22px 0 8px; }
+  p { margin: 0 0 10px; }
+  code { font: 13px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--lilac-soft); color: #3d2fb3; padding: 1px 6px; border-radius: 6px; }
+
+  /* hero */
+  .hero { position: relative; overflow: hidden; border-radius: 28px; background: linear-gradient(120deg, #ffffff 0%, #f3f0ff 55%, #ffe9f0 100%); box-shadow: var(--shadow-lg); padding: 44px 44px 36px; margin-bottom: 22px; }
+  .hero .blob { position: absolute; border-radius: 50%; filter: blur(2px); opacity: .95; pointer-events: none; z-index: 0; }
+  .hero > :not(.blob) { position: relative; z-index: 1; }
+  .hero .b1 { width: 220px; height: 220px; right: 60px; top: -70px; background: radial-gradient(circle at 35% 30%, #b9adff, var(--peri) 60%, #4a3bd6); }
+  .hero .b2 { width: 120px; height: 120px; right: 210px; top: 150px; background: radial-gradient(circle at 35% 30%, #ffc0d2, var(--coral) 60%, #d63a6b); }
+  .hero .b3 { width: 70px; height: 70px; right: 250px; top: 90px; background: radial-gradient(circle at 35% 30%, #ffe0b8, var(--peach) 60%, #e08a2a); }
+  .hero .b4 { width: 42px; height: 42px; right: 40px; top: 230px; background: radial-gradient(circle at 35% 30%, #cfe6ff, #6aa8ff 60%, #2f6fd6); }
+  .hero h1 { font-size: clamp(44px, 7vw, 84px); line-height: .92; margin: 0 0 18px; font-weight: 700; color: var(--peri); max-width: 620px; }
+  .hero h1 span { display: block; }
+  .hero h1 .alt { color: var(--ink); }
+  .hero .kicker { font-family: inherit; font-weight: 500; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--coral); margin-bottom: 14px; }
+  .hero .sub { font-size: 16px; color: var(--muted); max-width: 640px; margin: 0 0 14px; }
+  .meta { font-size: 13px; color: var(--muted); }
+  .meta span + span::before { content: " · "; }
+
+  /* stat tiles */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 0 0 8px; }
+  .stat { background: var(--card); border-radius: 18px; box-shadow: var(--shadow); padding: 16px 18px 14px; position: relative; overflow: hidden; }
+  .stat .k { font-size: 12.5px; color: var(--muted); font-weight: 600; }
+  .stat .v { font-family: var(--display); font-size: 40px; font-weight: 700; line-height: 1.05; margin: 4px 0 2px; color: var(--ink); }
+  .stat .v small { font-size: 14px; color: var(--muted); font-weight: 500; margin-left: 6px; }
+  .stat.peri { background: linear-gradient(135deg, var(--peri), #8f7bff); color: #fff; }
+  .stat.peri .k, .stat.peri .v, .stat.peri .v small { color: #fff; }
+  .mixbar { display: flex; height: 14px; border-radius: 8px; overflow: hidden; margin-top: 10px; }
+  .mixbar span { display: block; height: 100%; }
+  .mixbar .R { background: linear-gradient(90deg, #ff7a9c, var(--red-solid)); }
+  .mixbar .A { background: linear-gradient(90deg, #ffc987, var(--amber-solid)); }
+  .mixbar .G { background: linear-gradient(90deg, #7fe0b2, var(--green-solid)); }
+  .mixlabels { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); margin-top: 6px; font-weight: 600; }
+
+  /* legend */
+  .legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 14px 0 8px; }
+  .legend .card { background: var(--card); border-radius: 18px; box-shadow: var(--shadow); padding: 16px 18px; }
+  .legend h3 { font-family: inherit; margin: 0 0 10px; font-size: 12px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); font-weight: 700; }
+  .legend ul { margin: 0; padding: 0; list-style: none; }
+  .legend li { margin: 0 0 9px; font-size: 14px; }
+  .legend li:last-child { margin-bottom: 0; }
+
+  .chip { display: inline-block; font-family: var(--display); font-size: 12px; font-weight: 700; letter-spacing: .02em; padding: 3px 11px; border-radius: 999px; white-space: nowrap; vertical-align: middle; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+  .chip.Red { background: var(--red-bg); color: var(--red-fg); }
+  .chip.Amber { background: var(--amber-bg); color: var(--amber-fg); }
+  .chip.Green { background: var(--green-bg); color: var(--green-fg); }
+  .actor { display: inline; font-size: 13px; font-weight: 700; color: var(--ink); }
+  .actor .ic { margin-right: 5px; }
+  .ic { display: inline-block; color: var(--peri); line-height: 0; }
+  .ic svg { width: 16px; height: 16px; vertical-align: -0.2em; }
+  details.task > summary .badges .ic svg { vertical-align: middle; }
+  .tpw { font-size: 13px; color: var(--muted); font-weight: 600; white-space: nowrap; }
+
+  /* cycle */
+  .cycle { background: var(--card); border-radius: 24px; box-shadow: var(--shadow); padding: 18px 10px 6px; }
+  .cycle svg { width: 100%; height: auto; max-height: 700px; display: block; }
+  .cycle .stage-node { cursor: pointer; }
+  .cycle .stage-node rect.card { fill: #fff; stroke: none; filter: url(#soft); }
+  .cycle .stage-node:hover rect.card, .cycle .stage-node:focus rect.card { fill: var(--lilac-soft); }
+  .cycle .stage-node .band { fill: var(--peri); filter: none; }
+  .cycle text { font-family: inherit; }
+  .cycle .num { font-family: var(--display); font-size: 26px; font-weight: 700; fill: var(--peri); }
+  .cycle .nm { font-family: var(--display); font-size: 13px; font-weight: 700; fill: var(--ink); }
+  .cycle .prof { font-size: 11px; fill: var(--muted); }
+  .cycle .tally rect { rx: 3; }
+  .cycle .arrow { fill: none; stroke: url(#ribbon); stroke-width: 7; stroke-linecap: round; marker-end: url(#arr); opacity: .95; }
+  .cycle .arrow.loop { stroke: var(--peri); stroke-width: 5; stroke-dasharray: 0.1 11; stroke-linecap: round; }
+  .cycle .centre-big { font-family: var(--display); font-size: 58px; font-weight: 700; fill: #fff; text-anchor: middle; }
+  .cycle .centre-k { font-family: inherit; font-size: 12px; font-weight: 500; fill: rgba(255,255,255,.85); text-anchor: middle; letter-spacing: .1em; }
+  .cycle .centre { font-size: 12.5px; fill: var(--muted); text-anchor: middle; }
+  .cycle-note { font-size: 13px; color: var(--muted); margin-top: 10px; }
+
+  /* stage boxes */
+  details.stage { border: 0; border-radius: 22px; margin: 16px 0; background: var(--card); box-shadow: var(--shadow); overflow: hidden; }
+  details.stage > summary { list-style: none; cursor: pointer; padding: 18px 22px; display: grid; grid-template-columns: 86px 1fr 200px; gap: 16px; align-items: center; }
+  details.stage > summary::-webkit-details-marker { display: none; }
+  details.stage.tint-0 > summary { background: linear-gradient(100deg, var(--peach-soft) 0 38%, #fff 38.2%); }
+  details.stage.tint-1 > summary { background: linear-gradient(100deg, var(--lilac-soft) 0 38%, #fff 38.2%); }
+  details.stage.tint-2 > summary { background: linear-gradient(100deg, var(--mint-soft) 0 38%, #fff 38.2%); }
+  details.stage.tint-3 > summary { background: linear-gradient(100deg, var(--coral-soft) 0 38%, #fff 38.2%); }
+  details.stage.tint-4 > summary { background: linear-gradient(100deg, var(--sky-soft) 0 38%, #fff 38.2%); }
+  details.stage > summary .n { font-family: var(--display); font-size: 54px; font-weight: 700; line-height: 1; color: var(--peri); display: flex; align-items: center; gap: 8px; }
+  details.stage > summary .n::after { content: ""; width: 22px; height: 6px; border-radius: 3px; background: var(--coral); }
+  details.stage > summary .t { font-family: var(--display); font-size: 21px; font-weight: 700; line-height: 1.15; }
+  details.stage > summary .p { font-size: 13px; color: var(--muted); margin-top: 3px; }
+  details.stage > summary .tallies { }
+  details.stage > summary .open-hint { font-size: 12px; color: var(--muted); grid-column: 2 / -1; margin-top: -8px; }
+  details[open].stage > summary .open-hint { display: none; }
+  .stage-body { padding: 0 22px 22px; }
+  .stage-body .intro { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 26px; margin: 12px 0 6px; font-size: 14px; }
+  .k { font-size: 11.5px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); display: block; margin: 12px 0 3px; font-weight: 700; }
+  .stage-body .intro .k { margin-top: 0; }
+  .notdone { border-radius: 14px; padding: 12px 16px; margin: 14px 0; background: linear-gradient(135deg, var(--lilac-soft), #fff); border-left: 5px solid var(--peri); font-size: 14px; }
+
+  /* task boxes */
+  details.task { border: 1px solid var(--line); border-radius: 14px; margin: 10px 0; background: #fff; }
+  details[open].task { box-shadow: var(--shadow); border-color: transparent; }
+  details.task > summary { list-style: none; cursor: pointer; padding: 11px 14px; display: grid; grid-template-columns: 54px 1fr auto; gap: 12px; align-items: center; }
+  details.task > summary::-webkit-details-marker { display: none; }
+  details.task > summary .id { font-family: var(--display); font-weight: 700; font-size: 15px; position: relative; z-index: 1; padding-left: 2px; }
+  details.task > summary { position: relative; overflow: hidden; border-radius: 14px; }
+  details.task > summary::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 82px; clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%); }
+  details.task.Red > summary::before { background: #ffe4ea; }
+  details.task.Amber > summary::before { background: #fff0d6; }
+  details.task.Green > summary::before { background: #dcf7e8; }
+  details.task > summary .nm, details.task > summary .badges { position: relative; z-index: 1; }
+  details.task > summary .nm { font-weight: 600; }
+  details.task > summary .badges { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .task-body { padding: 4px 16px 16px 16px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1.3fr 1fr; gap: 6px 30px; font-size: 14px; }
+  .task-body ol { margin: 0; padding-left: 20px; }
+  .task-body ol li { margin: 3px 0; }
+  .task-body ol li::marker { color: var(--peri); font-weight: 700; }
+  .pins { display: flex; gap: 6px; flex-wrap: wrap; }
+  .pin { font-size: 12px; border-radius: 8px; padding: 3px 9px; background: var(--lilac-soft); text-decoration: none; color: #3d2fb3; font-weight: 600; }
+  .pin:hover { background: var(--peri); color: #fff; }
+
+  /* modules */
+  .modstrip { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; margin: 12px 0 18px; }
+  .modstrip a { display: block; border-radius: 16px; padding: 12px 14px 12px; font-size: 13px; text-decoration: none; color: var(--ink); background: var(--card); box-shadow: var(--shadow); font-weight: 600; line-height: 1.3; }
+  .modstrip a b { display: block; font-family: var(--display); font-size: 22px; color: var(--peri); margin-bottom: 4px; }
+  .modstrip a:nth-child(6n+1) b { color: var(--peri); } .modstrip a:nth-child(6n+2) b { color: var(--coral); } .modstrip a:nth-child(6n+3) b { color: #e08a2a; } .modstrip a:nth-child(6n+4) b { color: #1f9d6a; } .modstrip a:nth-child(6n+5) b { color: #2f6fd6; } .modstrip a:nth-child(6n+6) b { color: #b03a9a; }
+  .modstrip a:hover { background: var(--lilac-soft); }
+  details.module { border-radius: 18px; margin: 12px 0; background: var(--card); box-shadow: var(--shadow); }
+  details.module > summary { list-style: none; cursor: pointer; padding: 12px 18px; display: grid; grid-template-columns: 64px 1fr auto; gap: 12px; align-items: center; }
+  details.module > summary::-webkit-details-marker { display: none; }
+  details.module > summary .id { font-family: var(--display); font-weight: 700; font-size: 24px; color: var(--peri); }
+  details.module > summary .nm { font-family: var(--display); font-weight: 700; font-size: 16px; }
+  details.module > summary .sl { font-size: 12px; color: var(--muted); }
+  .module-body { padding: 4px 18px 16px; border-top: 1px solid var(--line); font-size: 14px; }
+
+  table.simple { border-collapse: collapse; width: 100%; font-size: 14px; margin: 8px 0 16px; background: var(--card); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); }
+  table.simple th, table.simple td { text-align: left; padding: 9px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.simple th { font-size: 11.5px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); font-weight: 700; }
+  .stories-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .story { background: var(--card); border-radius: 18px; box-shadow: var(--shadow); padding: 16px 18px; font-size: 14px; }
+  .story b { font-family: var(--display); display: block; font-size: 16px; margin-bottom: 6px; color: var(--peri); }
+
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 0; }
+  .toolbar button { font: inherit; font-family: var(--display); font-weight: 500; font-size: 13px; padding: 8px 14px; border: 0; background: #fff; color: var(--ink); border-radius: 999px; cursor: pointer; box-shadow: var(--shadow); }
+  .toolbar button:hover { background: var(--peri); color: #fff; }
+  .foot { margin-top: 44px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; }
+
+  @media (max-width: 760px) {
+    .task-body, .stage-body .intro, .stories-grid { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    details.stage > summary { grid-template-columns: 70px 1fr; }
+    details.stage > summary .tallies { grid-column: 1 / -1; }
+    .hero { padding: 28px 22px; }
+  }
+
+  @media print {
+    @page { size: A4; margin: 12mm 11mm; }
+    body { font-size: 11.5px; background: #fff; }
+    main { max-width: none; padding: 0; }
+    .toolbar, .open-hint, .noprint { display: none !important; }
+    .hero { padding: 26px 30px; border-radius: 18px; box-shadow: none; }
+    .chip.Red { background: #ffdde4; } .chip.Amber { background: #ffe9c8; } .chip.Green { background: #d3f2e1; }
+    .mixbar .R { background: #ff5c8a; } .mixbar .A { background: #ffb04a; } .mixbar .G { background: #3ec98a; }
+    .notdone { background: var(--lilac-soft); }
+    details.stage.tint-0 > summary, details.stage.tint-1 > summary, details.stage.tint-2 > summary, details.stage.tint-3 > summary, details.stage.tint-4 > summary { background: #fff; }
+    .hero { background: #f7f5ff; } .hero .blob { display: none; }
+    .cycle .stage-node rect.card { filter: none; stroke: var(--line); }
+    .cycle circle { filter: none; }
+    .hero h1 { font-size: 48px; }
+    .stat, .legend .card, details.stage, details.module, .cycle, .story, table.simple, .modstrip a { box-shadow: none; border: 1px solid var(--line); }
+    h2 { margin-top: 22px; }
+    details.stage { break-inside: auto; }
+    details.stage > summary, .stage-body .intro { break-inside: avoid; break-after: avoid; }
+    h2, h3 { break-after: avoid; }
+    .cycle, .stats { break-inside: avoid; }
+    details.task, details.module { break-inside: auto; }
+    details.task > summary, details.module > summary { break-after: avoid; break-inside: avoid; }
+    .k { break-after: avoid; }
+    details > summary { cursor: default; }
+    .cycle svg { max-height: 560px; }
+    a { color: inherit; text-decoration: none; }
+    .task-body { grid-template-columns: 1.3fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div>
+    <div class="kicker">D4 · Sprint 1 · Team 2, 20-NBN SDLC Using AI</div>
+    <h1><span>Life</span><span class="alt">cycle</span><span>map</span></h1>
+    <p class="sub">The NBN software development lifecycle as a cycle of eight stages, opened to task level. Each stage box opens into its tasks; each task says who acts, what to do, the colour of the delegation decision, the gate, and what would change the colour. The twelve D3 modules are pinned to the rows they govern.</p>
+    <div class="meta"><span>Zac Clarkson (UX)</span><span>Source of truth: <code>docs/research/lifecycle-task-map.md</code> and <code>docs/reports/D3-sdlc-research.md</code> sections 5 and 6</span><span>Departures from the D2 v2 baseline are proposals to Alessio</span></div>
+    <div class="toolbar noprint">
+      <button type="button" data-act="openall">Open every box</button>
+      <button type="button" data-act="closeall">Close every box</button>
+      <button type="button" data-act="print">Print or save as PDF</button>
+    </div>
+  </section>
+
+<h2 id="read">How to read a box</h2>
+  <div class="legend">
+    <div class="card"><h3>Colour is the delegation decision</h3><ul id="legend-colours"></ul></div>
+    <div class="card"><h3>Actor is who or what does the task</h3><ul id="legend-actors"></ul></div>
+    <div class="card"><h3>Governance touchpoints</h3><ul id="legend-tp"></ul></div>
+    <div class="card"><h3>Rules that apply to every row</h3><ul id="legend-rules"></ul></div>
+  </div>
+  <p class="cycle-note">Colour is never the only carrier of meaning on this map: a task row carries its colour as a band behind the id and the opened row states the word, following the accessibility rule the map itself sets in Stage 4.</p>
+
+  <h2 id="sec-cycle">The cycle</h2>
+  <div class="cycle" id="cycle"></div>
+  <p class="cycle-note">Every stage opens red, generates amber or green, and closes on a red decision or gate. The dotted arrow from 8 back to 1 is 8.6 writing the learning back into the context 1.1 prompts from. Click a stage to open it. Stage colours were removed on 4 Sep because a stage banner adds nothing once the tasks carry colours; each box shows its profile and a tally of its task colours instead. Task 8.6 writes what production taught back into the context that Stage 1 prompts from, which is what makes this a cycle rather than a line.</p>
+
+  <h2 id="sec-stages">The eight stages</h2>
+  <div id="stages-root"></div>
+
+  <h2 id="sec-modules">The twelve modules, and where they sit on the map</h2>
+  <p>The module list agreed by the whole team at the 3 Sep reconvene, in D3 order: six build modules from slice 2, six governance modules from slice 3. Each opens into its gate mechanism, the map rows it governs and the one thing it changed in the team's thinking.</p>
+  <div class="modstrip" id="modstrip"></div>
+  <div id="modules-root"></div>
+
+  <h2 id="sec-stories">The stories every example runs on</h2>
+  <div class="stories-grid" id="stories-root"></div>
+  <h3>Assumed business rules, to verify in the interviews (A4 is an observation with a narrow scope)</h3>
+  <table class="simple" id="assumptions"></table>
+
+  <h2 id="honesty">Where the design and this repository disagree</h2>
+  <p>Green describes the design of the pipeline. Five green or amber rows are not backed by a control in force in <code>nbn-sdlc-demo</code> today, and each row says so in its "what would move it" line: 4.5 (no Playwright), 6.2 (format step advisory), 6.3 (no trailer hook, no trailers on main), 6.4 (ruleset targets no branch), 7.5 (scan advisory), 8.2 (no rollout controller). These are recorded gaps, not map colours. Stage 8 is unvalidated by the workshop.</p>
+
+  <div class="foot">D4 for the Planner card "[UX] Finish the lifecycle map". Figma frame B (node 6-155) is the design source for the stage boxes; this page is the operational view and the PDF export in <code>docs/reports</code>. As-is scenarios are hypotheses from the workshop record, written to be replaced by the developer interviews in Sprint 2.</div>
+</main>
+
+<script>
+// D4 lifecycle map data. Source of truth: docs/research/lifecycle-task-map.md and
+// docs/reports/D3-sdlc-research.md sections 5 and 6. Edit those first, then this.
+const MAP = {
+  colours: {
+    Red: "A human decides, judges or approves.",
+    Amber: "AI drafts or assists, a human approves.",
+    Green: "AI executes, a human monitors. Defensible only where a hook or an equivalent deterministic check stands behind it."
+  },
+  actors: {
+    Human: "A person decides or fires the command.",
+    Agent: "The coding agent (Claude Code, Copilot agent) drafts, plans or executes.",
+    "Sub-agent": "A separate agent with its own context, used for review or a spike. It widens coverage; it is not an independent oracle.",
+    Hook: "A deterministic check: git hook, CI job, design-system constraint, rollout controller. The only holder that makes green defensible."
+  },
+  touchpoints: {
+    tokens: { label: "Token spend", short: "T", text: "Record generating time, reviewing time and tokens consumed for this task (module 6.9). The platform quota is the only hard stop and arrives without warning." },
+    authorship: { label: "Code authorship", short: "A", text: "Authorship is four names: committer, agent co-author, non-requesting approver, accountable owner in the register (module 6.10)." },
+    review: { label: "Review load", short: "R", text: "Diligence lands on the reviewer when the agent owns creation. Count review time beside generation time (modules 6.3, 6.7, 6.9)." }
+  },
+  stories: {
+    A: "Story A, technician dispatch. A retailer requests a technician through the maintenance portal; the system matches fault to technician and equipment and schedules the visit. Under the 11 Sep 2018 ACCC enforceable undertaking, a late fix or a missed appointment costs a $25 rebate each. A scheduling defect is a rebate liability with a regulator behind it.",
+    B: "Story B, retailer notifications. NBN Co is wholesale-only. A service change, scheduled maintenance or an API update has to reach retailers' engineering, sales and legal teams first, with an audit trail. A notification and API-documentation pipeline for retailers.",
+    base: "Base case: the workshop's fault-reporting tool for NBN technicians, which every reader has seen."
+  },
+  assumptions: [
+    ["A1", "Every appointment has a committed window; a missed window is a reportable event with a rebate. Assumed, verify in interviews."],
+    ["A2", "Service-affecting changes are notified to affected retailers before the change, with an audit trail. Assumed, verify in interviews."],
+    ["A3", "Some code bases and the retailer-facing API documentation are subject to external review, so their change history has to be readable outside NBN. Assumed, verify in interviews."],
+    ["A4", "At the workshop Alessio asked people not to put the NBN name or company material into the personal AI accounts in use, and not to put company secrets into Claude. That is a rule about the account, not about the tool or the lifecycle. Whether an enterprise account changes it, and which systems if any are off limits to AI, are interview questions. Observed at the workshop, D2 v2 section 9; scope narrowed 8 Sep."]
+  ],
+  rules: [
+    ["Anchor rule", "Start from what is known to be real. Let AI generate only in the gaps deliberately left open. Research every generated hypothesis before treating it as real."],
+    ["Exposure rule", "Verification rigour scales with exposure: internal concept needs little, internal production tool needs a high standard, customer-facing production asset gets the full battery."],
+    ["Green means a hook", "Every green row names the deterministic check behind it. Where the check is not in force in our repository, the row says so."]
+  ],
+  stages: [
+    {
+      n: 1, name: "Ideation and business case", profile: "Leans intervention",
+      baseline: "Baseline red with an amber first draft; sources silent. The framing and the decision are human; the divergent drafting between them is where the automation lives.",
+      shape: "Brief becomes prompt, slip into automation for divergent options, return to a human decision.",
+      also: "Competitor and analogue scan, cost and benefit estimate, risk register first cut, success measures, sponsor identification, funding gate.",
+      asis: "A product owner writes the case in a Word template, mostly alone, from the last similar project's numbers. AI, if used, is Copilot or a personal chat account with no record. Pain: the gap between first draft and a case the sponsor will read, and numbers that cannot be traced to a source. Hypothesis, verify in interviews.",
+      tasks: [
+        { id: "1.1", name: "Frame the brief", colour: "Red", actor: "Human", holder: "Human",
+          do: ["Write the business context, the goals, what is troubling and what is on the horizon.", "Get the sponsor to agree the brief describes the problem.", "Treat the brief as the prompt: everything downstream runs on it."],
+          gate: "A written brief exists and the sponsor agrees it describes the problem.",
+          moves: "Nothing moves it. Framing is the human control surface for the whole stage.",
+          example: "Story A: the brief names missed appointments and the $25 rebate as the pain to size." },
+        { id: "1.2", name: "Contextual inquiry", colour: "Amber", actor: "Agent", holder: "AI drafts the environment scan from public sources, human selects",
+          do: ["Point the agent at public sources and at whatever internal material the account in use is cleared for (A4).", "Ask for a scan that narrows from organisation to team to the specific process.", "Strike out anything the agent asserted without a source before anyone reads it as fact."],
+          gate: "Human has struck out anything the AI asserted without a source.",
+          moves: "Toward green only if a citation hook verifies every source before a human sees the scan. Toward red if the inquiry needs internal or personal data.",
+          example: "Base case: scan the technician fault-reporting process from public NBN and ACCC material, then confirm the team-level detail in interviews." },
+        { id: "1.3", name: "Generate divergent business-case options", colour: "Green", actor: "Agent", holder: "AI generates, human monitors", tp: ["tokens"],
+          do: ["Ask for three to five business cases with different framings, each with industry examples.", "Choose between drafts instead of editing one into shape.", "Ship nothing from this task."],
+          gate: "Three to five options exist, none of them shipped anywhere.",
+          moves: "Green because nothing ships (exposure rule). It becomes amber the moment one option is chosen and evidence is attached (1.4). Departure from the baseline, stated as a proposal.",
+          example: "The workshop drafted a full case (problem, solution, three benefits with metrics, effort, risk) in under a minute. Ask for that five times." },
+        { id: "1.4", name: "Back the preferred option with evidence", colour: "Amber", actor: "Agent", holder: "AI compiles and cites, hook verifies citations, human runs interviews",
+          do: ["Agent compiles evidence and cites every figure.", "Run the citation-verification hook over the references (the workshop's model invented references).", "Humans run the interviews and confirm volume figures with NBN before the case goes to a sponsor."],
+          gate: "Every figure in the case has a verified source.",
+          moves: "The compilation moves toward green only when the citation hook is in force. The interviews stay red.",
+          example: "Story A: the rebate is public, so the agent sizes the case from it; the human confirms the missed-appointment volume with NBN." },
+        { id: "1.5", name: "Refine, align stakeholders, sign off", colour: "Red", actor: "Human", holder: "Human",
+          do: ["Refine the chosen case with the evidence attached.", "Align stakeholders.", "Record sponsor sign-off."],
+          gate: "Sponsor sign-off recorded.",
+          moves: "Nothing moves it. This is the decision the stage exists to make.",
+          example: "The agent's five options and the verified evidence are the input; the decision is the sponsor's." }
+      ]
+    },
+    {
+      n: 2, name: "Requirements and discovery", profile: "Mixed",
+      baseline: "Baseline green for first-draft stories; slice 1 challenged it to amber. The task view dissolves the disagreement: drafting is green, the Definition of Ready gate is red.",
+      shape: "Fix the anchors, draft in the gaps, verify against the Definition of Ready, commit to the repo.",
+      also: "Stakeholder interviews and contextual inquiry with real users, heuristic review of the current tool, non-functional requirements, data and privacy impact assessment, regulatory mapping (module 6.12), story mapping and release slicing, grooming cadence.",
+      asis: "A business analyst writes stories in Jira from meeting notes and a Confluence page; out-of-scope lives in someone's head. Handoff is a document handed to the next role. Pain: scope creep from criteria never written down (the 35-file change) and re-explaining context. Hypothesis, verify in interviews.",
+      tasks: [
+        { id: "2.1", name: "Fix the anchor set", colour: "Red", actor: "Human", holder: "Human",
+          do: ["Write down the known users, known tasks, known pain points and existing evidence.", "Mark each as fact, not hypothesis."],
+          gate: "The anchor set is written down and marked as fact.",
+          moves: "Nothing moves it. The anchor rule needs a human to say what is real.",
+          example: "Base case: the technicians, the fault types, the current reporting steps and the known complaints." },
+        { id: "2.2", name: "Draft user stories from the anchor set", colour: "Green", actor: "Agent", holder: "AI generates, human monitors", tp: ["tokens"],
+          do: ["Give the agent the anchor set and ask for stories that trace to it.", "Expect the drafts to be stylistically fine, less diverse than human ones, and light on acceptance criteria (slice 1, Stage 2).", "Do not accept anything here; acceptance is 2.4."],
+          gate: "Every story traces to an anchor or to a gap deliberately left open.",
+          moves: "Green because a draft story is internal and low exposure and the knowledge is not novel. The colour the literature argues about belongs to 2.4.",
+          example: "Story A: stories for the retailer raising a request, the dispatcher matching equipment, the technician confirming the window." },
+        { id: "2.3", name: "Draft acceptance criteria and the out-of-scope list", colour: "Amber", actor: "Agent", holder: "AI drafts, human edits", tp: ["review"],
+          do: ["Ask for acceptance criteria and an explicit out-of-scope list per story.", "Add what the agent did not think to ask for: accessibility and security criteria on every story."],
+          gate: "Accessibility and security criteria present on every story.",
+          moves: "Toward green if a template check refuses a story without accessibility and security criteria. Stays amber while the human is adding what the agent missed.",
+          example: "A workshop team found the generated criteria had no accessibility requirements until prompted in (D2 v2 section 7)." },
+        { id: "2.4", name: "Verify against the Definition of Ready, prioritise, accept", colour: "Red", actor: "Human", holder: "Human",
+          do: ["Walk each story through the Definition of Ready checklist.", "Prioritise.", "Product owner accepts into the backlog."],
+          gate: "Story passes the DoR checklist; product owner accepts.",
+          moves: "Nothing moves it. The DoR is a team agreement a person walks (Microsoft playbook).",
+          example: "Leon, 4 Sep: AI-forward for drafting, but at the end you verify against the Definition of Ready." },
+        { id: "2.5", name: "Commit accepted stories and criteria to the repo as Markdown", colour: "Green", actor: "Hook", holder: "Hook (CI check that the file exists and parses)",
+          do: ["Commit the accepted stories and criteria as a Markdown file on the branch.", "Reference the file by name in every later prompt instead of pasting context."],
+          gate: "File is on the branch and referenced by name in later prompts.",
+          moves: "Green while the CI check exists. Without it the task is a convention.",
+          example: "Several workshop teams invented this independently (D2 v2 section 7.3). It is the context lever for this stage.", modules: ["6.7"] }
+      ]
+    },
+    {
+      n: 3, name: "Solution design and architecture", profile: "Leans intervention, with the largest amber-if-context lever in the lifecycle",
+      baseline: "Baseline red as delivered, amber if context improves; both halves confirmed. The lever is task 3.1: the better the documented context, the more of 3.2 and 3.5 the AI can carry.",
+      shape: "Document the as-is, generate options against the approved list, decide as an ADR, threat model, spike the riskiest unknown.",
+      also: "Data model and schema, integration and API contract design (story B's contract starts here), non-functional design, build-versus-buy against the approved list, cost estimate, design review sign-off, fitness functions for CI.",
+      asis: "An architect draws the design against a partly out-of-date infrastructure map and records the decision on a Confluence page reviewed in a meeting. The estate is decades old in many languages. Pain: rediscovering the as-is instead of designing the to-be. Hypothesis, verify in interviews.",
+      tasks: [
+        { id: "3.1", name: "Document the existing system", colour: "Amber", actor: "Agent", holder: "AI reads and drafts, human corrects",
+          do: ["Point the agent at the repos, the infrastructure map and the existing patterns.", "Have it draft the context document: infrastructure, APIs, patterns.", "Correct it, then keep it in the repo where the next generation reads from it."],
+          gate: "A context document exists in the repo that a new engineer could onboard from.",
+          moves: "This task is what moves the rest of the stage. Better context makes 3.2 and 3.5 more reliable. It is the precondition for any amber-to-green move (slice 1 recommendation 4).",
+          example: "The brand-colours fix was to have the model learn the design system and write it into the instructions file. 3.1 is that fix applied to architecture." },
+        { id: "3.2", name: "Generate candidate architectures against the approved tool list", colour: "Amber", actor: "Agent", holder: "AI drafts three to five options, human selects",
+          do: ["Load the context document and the approved tool list.", "Ask for three to five options, each naming its trade-offs.", "Select; do not accept the first."],
+          gate: "Every option uses only approved tools and names its trade-offs.",
+          moves: "Only as good as the context it was pointed at (D1 section 3). Stays amber; a check that rejects unapproved tools would harden the gate; the choice stays with a person.",
+          example: "Leon's example: a page with a map view needing credentials; the approved list names one mapping library, so the suggestion uses it." },
+        { id: "3.3", name: "Trade study and architecture decision record", colour: "Red", actor: "Human", holder: "Human",
+          do: ["Run the trade study on the options.", "Write the ADR and merge it.", "Update the decision log."],
+          gate: "ADR merged; decision log updated.",
+          moves: "Nothing moves it.",
+          example: "This repo already has one: docs/adr/001-stack.md." },
+        { id: "3.4", name: "Threat model, security and privacy requirements", colour: "Red", actor: "Human", holder: "Human, AI-assisted checklist",
+          do: ["Walk the threat model with the AI checklist as an assist.", "Have someone other than the author review it."],
+          gate: "Threat model reviewed by someone other than the author.",
+          moves: "Nothing moves it. Microsoft's SDL puts it in design with independent review.",
+          example: "Story A: the appointment data path and the retailer portal boundary are in scope; no production data in a prompt on an account that is not cleared for it (A4)." },
+        { id: "3.5", name: "Technical spike on the riskiest unknown", colour: "Amber", actor: "Sub-agent", holder: "AI agent runs the spike, human reads the log", tp: ["tokens"],
+          do: ["Scope one question and a time-box.", "Let the agent go and find out.", "Log three numbers: generating time, reviewing time, tokens consumed (module 6.9).", "Read the spike log and decide."],
+          gate: "Spike log answers the question it was scoped for; time-box respected.",
+          moves: "Stays amber. The token register lives here; the platform quota is the only hard stop.",
+          example: "The team's own INF-6a pattern.", modules: ["6.9"] }
+      ]
+    },
+    {
+      n: 4, name: "UX design and prototyping", profile: "Mixed, and deliberately split",
+      baseline: "Baseline green journey mapping, red brand and design; the green half challenged to amber, the red half sharpened by both supervisor reviews into a deterministic rule. The team's own stage.",
+      shape: "Anchor, hypothesise in the gaps, skeleton fast, enforce the design system with a hook, critique with a human, test with real users.",
+      also: "Content and microcopy, information architecture, interaction states and error handling, motion policy, localisation and plain-English review, token maintenance, design QA against the build, screenshot-as-specification handoff.",
+      asis: "A designer works in a design tool against the brand system and hands screens to engineering at the end. Prose is a poor input for spatial decisions; generated designs drift off the system as context fills; the developer sits idle meanwhile. NBN runs Siteimprove and treats WCAG 2.2 AAA as part of done. Best-evidenced as-is (Group 1 designers spoke).",
+      notdone: "What we chose not to do, as design. Because accessibility is a hard requirement at NBN, the design system the agent generates against has less motion, no auto-dismissing pop-ups, no information carried by colour alone, and a keyboard path through every flow. Those choices are enforced in 4.5, not reviewed in 4.6. This map follows its own rule: every colour also carries its word.",
+      tasks: [
+        { id: "4.1", name: "Fix the anchor set", colour: "Red", actor: "Human", holder: "Human",
+          do: ["Write down known users, historical evidence, known tasks and pains as fact."],
+          gate: "Anchors written down as fact.",
+          moves: "Nothing moves it.",
+          example: "Story A: dispatchers, technicians, the known missed-appointment causes." },
+        { id: "4.2", name: "Hypothesis journey map and proto-personas in the gaps", colour: "Amber", actor: "Agent", holder: "AI drafts, human researcher validates",
+          do: ["Let the agent draft only in the gaps the anchor set leaves open.", "Attach a research task to every generated hypothesis.", "Nothing generated is real until researched."],
+          gate: "Every generated hypothesis has a research task attached.",
+          moves: "Toward red if hypotheses start being treated as findings. Never green. A hypothesis map is a research plan.",
+          example: "NN/g hypothesis maps and Leon's anchor rule are the same instruction from two directions." },
+        { id: "4.3", name: "Skeleton screens straight from the acceptance criteria", colour: "Green", actor: "Agent", holder: "AI generates, human monitors", tp: ["tokens"],
+          do: ["Generate rough screens for every story in the sprint from the acceptance criteria file (2.5).", "Keep them rough. They are things to react to.", "Move on to the next page while the engineer works the first."],
+          gate: "Rough screens exist for every story in the sprint, none of them polished.",
+          moves: "Green because it is exploration. It turns amber the moment a skeleton is treated as a deliverable.",
+          example: "The Tuesday team kept its engineer busy on page one while the design pair moved to page two (D2 v2 section 7.1).", modules: ["6.7"] },
+        { id: "4.4", name: "Brand and design-system decisions", colour: "Red", actor: "Human", holder: "Human; the design system is the rule set",
+          do: ["Decide the brand and system rules as humans.", "Load the design tokens into context as a constraint, not a description, before any generation."],
+          gate: "Design tokens loaded into context before any generation.",
+          moves: "Nothing moves it. Generation is the wrong tool for enforcing a deterministic system (31 Aug). Edge case: a new device type gets green exploration first, then humans codify the findings back here.",
+          example: "The brand-colours incident: the colours came from training data, and nobody could say where from until asked.", modules: ["6.5"] },
+        { id: "4.5", name: "Brand compliance check by overlay diff", colour: "Green", actor: "Hook", holder: "Hook (design-system CSS overrides generated CSS; visible shift fails)",
+          do: ["Generate the layout.", "Load the real design-system CSS after it so its rules override.", "Whatever visibly shifts (fonts, colours, spacing) is the violation. Run as a Playwright visual comparison plus an axe scan."],
+          gate: "No visible shift, or every shift is explained.",
+          moves: "Green only while the check runs in CI. Playwright is not yet in this repo (recorded gap), so today the check exists on paper only.",
+          example: "The one green in the lifecycle that sits next to a red decision without contradiction.", modules: ["6.5"] },
+        { id: "4.6", name: "Usability and accessibility critique", colour: "Amber", actor: "Agent", holder: "AI first-pass triage feeding a human expert", tp: ["review"],
+          do: ["Run the AI accessibility pass and the axe scan as triage.", "A human expert dispositions every finding.", "Encode a repeated finding as a skill so later pages are generated against it."],
+          gate: "Human has dispositioned every AI finding; WCAG target met.",
+          moves: "AI covers roughly two thirds of expert-found errors with meaningful false positives (slice 1). Moves toward green only for the findings a skill has turned into a generation rule; the expert stays.",
+          example: "Team 6 turned page one's findings into an accessibility skill (D2 v2 section 7.3).", modules: ["6.5", "6.7"] },
+        { id: "4.7", name: "Inclusion decisions, including First Nations inclusive-design policy", colour: "Red", actor: "Human", holder: "Human; codified as a hard limit before design starts",
+          do: ["Codify the policy in the system prompt and tool chain before the stage starts.", "Treat generated artifacts for First Nations audiences as hypotheses until validated with the community."],
+          gate: "Policy codified in the system prompt and tool chain before design starts.",
+          moves: "Nothing moves it. Stretch RAP VI 2026 to 2029 and the First Nations Digital Inclusion Plan bind the design, and the AI too.",
+          example: "Regulatory rule placed ahead of design (module 6.12).", modules: ["6.12"] },
+        { id: "4.8", name: "Test with real users", colour: "Red", actor: "Human", holder: "Human",
+          do: ["Test with real users.", "Record the findings.", "Do not substitute synthetic users."],
+          gate: "Findings from real users recorded; synthetic users not used as a substitute.",
+          moves: "Nothing moves it. Synthetic users idealise and fabricate (slice 1, Stage 4).",
+          example: "Design Sprint Friday is real customers for the same reason." }
+      ]
+    },
+    {
+      n: 5, name: "Development planning", profile: "Mixed",
+      baseline: "Baseline amber, confirmed. The most important row is the one the workshop weighted most: writing the issue properly, because the out-of-scope list prevents the thirty-five-file change.",
+      shape: "AI proposes the slicing and priorities, a human writes the issue and commits the plan, a hook pushes the issues.",
+      also: "Capacity check, risk and dependency review, spike identification, Definition of Done, environment and access readiness (tenant and account boundaries cost the workshop time), sprint goal, communication plan for affected retailers (story B).",
+      asis: "A delivery lead runs planning in Jira; stories are estimated in a session, assigned by who is free, dependencies found when someone is blocked. Out-of-scope is rarely written. Hypothesis, verify in interviews.",
+      tasks: [
+        { id: "5.1", name: "Slice the work into minimal, single-purpose issues", colour: "Amber", actor: "Agent", holder: "AI proposes the slicing, human adjusts",
+          do: ["Ask the agent to slice the accepted stories into single-purpose issues.", "Reject any issue that bundles more than one purpose."],
+          gate: "No issue bundles more than one purpose.",
+          moves: "Stays amber. Agentic PRs bundle purposes at over three times the human rate (slice 1, Stage 5), so the small-batch rule needs a person.",
+          example: "Story A: appointment-window logic and technician matching are separate issues, never one." },
+        { id: "5.2", name: "Prioritise, assign to roles, flag dependencies and complexity", colour: "Amber", actor: "Agent", holder: "AI drafts, human edits",
+          do: ["Have the agent draft MoSCoW priority, role assignment, dependencies and complexity.", "Edit against capacity and what the team knows."],
+          gate: "Every issue has a priority, an owner role and its dependencies listed.",
+          moves: "Stays amber; the plan is only as good as the meeting's knowledge.",
+          example: "The workshop demonstrated this end to end into a two-week plan (D2 v2 section 4.1)." },
+        { id: "5.3", name: "Write each issue properly", colour: "Red", actor: "Human", holder: "Human (the instructing role)",
+          do: ["Write the acceptance criteria and the out-of-scope list yourself.", "Make the criteria testable.", "Point the issue at the stories file from 2.5."],
+          gate: "Out-of-scope list present; criteria testable.",
+          moves: "Nothing moves it. This is the human's control surface over everything that follows: a good issue gives a good outcome.",
+          example: "The out-of-scope list is what prevents the 35-file change (D2 v2 section 4.2).", modules: ["6.1", "6.11"] },
+        { id: "5.4", name: "Commit the sprint plan", colour: "Red", actor: "Human", holder: "Human",
+          do: ["Team and product owner agree the plan.", "Check capacity."],
+          gate: "Team and product owner agree the plan; capacity checked.",
+          moves: "Nothing moves it.",
+          example: "" },
+        { id: "5.5", name: "Push the issues into the repo host", colour: "Green", actor: "Hook", holder: "Hook (issue template validation)",
+          do: ["Push the issues through the template.", "Let the template check refuse an issue missing criteria or an out-of-scope list."],
+          gate: "Issues exist, templated, linked to the stories file from 2.5.",
+          moves: "Green while the template validation exists. Mechanical.",
+          example: "" }
+      ]
+    },
+    {
+      n: 6, name: "Development and build", profile: "Leans autonomous, with a red gate at the end",
+      baseline: "Baseline amber, confirmed as the best-evidenced stage. Slice 2 modules 1 to 3 carry the operational detail.",
+      shape: "Agent plans, agent builds behind hooks, agent opens the PR with provenance, a human who did not write it approves.",
+      also: "Local setup and environment parity, coding standards, secret handling and the no-NBN-data rule, dependency selection against the approved list, migrations, feature flag wiring, docs in the same PR, pairing where the change is rebate-relevant.",
+      asis: "A developer picks up a Jira ticket, asks the analyst what it meant, branches, codes, writes some tests, opens a PR that waits. Not every developer is on GitHub. AI, if used, is Copilot or a personal chat with no record. Pain: the wait for review, and the decision load on the reviewer once AI owns creation. Hypothesis, verify in interviews.",
+      tasks: [
+        { id: "6.1", name: "Agent reads the issue, confirms each acceptance criterion, plans", colour: "Amber", actor: "Agent", holder: "AI plans, human confirms the plan",
+          do: ["Point the agent at the issue and the acceptance-criteria file.", "Have it restate each criterion and produce a plan.", "Confirm or redirect before any code is written; this is the last cheap point to redirect."],
+          gate: "Plan accepted before any code is written.",
+          moves: "Stays amber. The plan step escalates to a stronger model and is where redirection is cheapest.",
+          example: "Base case: the fault-reporting issue, planned against its criteria file.", modules: ["6.1"] },
+        { id: "6.2", name: "Branch, implement, commit", colour: "Green", actor: "Agent", holder: "AI executes; hooks enforce lint, format, conventional commit, secret scan", tp: ["tokens", "authorship"],
+          do: ["Agent branches from main, implements, commits.", "Pre-commit hooks run lint and format; commit-msg enforces Conventional Commits.", "One logical change per commit is a human rule the reviewer checks."],
+          gate: "Every commit passes the pre-commit hooks.",
+          moves: "Green only because hooks stand behind it. In this repo the prettier step ends in `|| true`, so format is advisory (recorded gap).",
+          example: "Slice 2 module 2: how a commit is done.", modules: ["6.2"] },
+        { id: "6.3", name: "Open a draft PR with description and provenance", colour: "Green", actor: "Agent", holder: "AI executes; hook checks the provenance trailer", tp: ["authorship"],
+          do: ["Agent opens a draft PR through the template.", "The PR carries the co-author trailer and the model and prompt record (the confidence card: plan, assumptions, alternatives, edge cases)."],
+          gate: "PR carries Co-Authored-By and the model and prompt record.",
+          moves: "Amber in practice today: no hook checks the trailer and no commit on our main carries one (slice 3 module 4). A commit-msg check that refuses an agent commit without a trailer would make it green in an afternoon.",
+          example: "Story A: a missed-window rebate dispute a year later will ask what changed and who approved it (A3).", modules: ["6.3", "6.10"] },
+        { id: "6.4", name: "Human code review and merge approval", colour: "Red", actor: "Human", holder: "Human, not the author; CI green", tp: ["authorship", "review"],
+          do: ["Review in this order: does it match how we already do this, is it one change, did it update what it touched, and only then correctness.", "Approve only if you did not request or author the change.", "Merge on CI green."],
+          gate: "Approved by someone other than the author; CI green.",
+          moves: "Nothing moves the colour. The gate itself is a convention today: the ruleset targets no branch (slice 2 gap 3), so the fix sits with the repo admin.",
+          example: "The last human decision before production in this repository (module 6.6).", modules: ["6.3", "6.6", "6.10"] },
+        { id: "6.5", name: "Iterate on review comments", colour: "Amber", actor: "Agent", holder: "AI revises, human re-reviews", tp: ["review"],
+          do: ["Agent answers review comments on the same branch.", "Reviewer re-reviews until comments are resolved."],
+          gate: "Reviewer's comments resolved.",
+          moves: "Stays amber; the realistic shape of the loop. In field data the agent stayed involved in 41 percent of post-merge revisions (slice 1).",
+          example: "Story B: the same PR regenerates the retailer API docs (green, derived by a build step); publishing them is red and belongs to Stage 8.", modules: ["6.3"] }
+      ]
+    },
+    {
+      n: 7, name: "Testing and QA", profile: "Mixed, with a hard ceiling",
+      baseline: "Baseline amber with the open question 'are the tests correct?'; confirmed, and the question validated by measurement: roughly half of generated tests and assertions are wrong.",
+      shape: "Agent writes tests, CI runs them, a separate agent attacks them, a human judges whether they are the right tests.",
+      also: "Integration and end-to-end tests, accessibility testing (Siteimprove, screen-reader pass), performance and load, contract tests for retailer-facing APIs (story B), exploratory testing, test data with no production data, defect triage, release readiness review.",
+      asis: "A developer tests their own change, CI runs it, a tester or second developer does a manual pass. Adequacy is judged by coverage. Pain: coverage does not measure correctness, and the reviewer judges tests they did not write against code they did not write. Hypothesis, verify in interviews.",
+      tasks: [
+        { id: "7.1", name: "Generate unit tests alongside the change", colour: "Amber", actor: "Agent", holder: "AI writes, human reads", tp: ["tokens"],
+          do: ["Have the agent write tests for every acceptance criterion with the change.", "Read them. Do not trust green output."],
+          gate: "Tests exist for every acceptance criterion.",
+          moves: "Stays amber. The green suite that tests nothing is the failure a sub-agent cannot catch because it would write the same test.",
+          example: "Slice 2 module 4.", modules: ["6.4"] },
+        { id: "7.2", name: "Run the CI suite", colour: "Green", actor: "Hook", holder: "Hook (CI)",
+          do: ["CI runs lint and typecheck, frontend tests, backend tests."],
+          gate: "All checks pass.",
+          moves: "Green; the four CI jobs are in force in this repo. Green is defensible only because 7.4 exists beside it.",
+          example: "", modules: ["6.4"] },
+        { id: "7.3", name: "Adversarial review pass by a separate agent", colour: "Amber", actor: "Sub-agent", holder: "Sub-agent reviews, human decides on findings", tp: ["tokens", "review"],
+          do: ["Run the review command with a separate agent, never the one that wrote the code.", "Surface every finding to a human. Auto-resolve nothing."],
+          gate: "Findings surfaced to a human, none auto-resolved.",
+          moves: "Stays amber. An agent may surveil another agent but not itself; it widens coverage and is not an oracle (D1 section 3).",
+          example: "What the workshop demonstrated with the review command.", modules: ["6.4", "6.8"] },
+        { id: "7.4", name: "Judge whether the tests are correct", colour: "Red", actor: "Human", holder: "Human, with mutation-style tooling as evidence", tp: ["review"],
+          do: ["Inject a fault and see whether the tests catch it (mutation-style).", "Judge, as a person, whether these are the right tests."],
+          gate: "Human confirms the tests would catch a real fault.",
+          moves: "Nothing moves it. The ceiling is structural: a checking agent has the same next-token properties as the writing agent.",
+          example: "CI can say the tests pass; only a person can say they are the right tests.", modules: ["6.4"] },
+        { id: "7.5", name: "Security scan and dependency audit", colour: "Green", actor: "Hook", holder: "Hook (CI)",
+          do: ["CI runs pnpm audit at high severity.", "A human dispositions any high finding."],
+          gate: "No high-severity finding, or each one dispositioned by a human.",
+          moves: "Green for the design. In this repo the scan fails red but nothing blocks a merge on it (slice 2 gap 3), so today it is advisory.",
+          example: "", modules: ["6.4"] }
+      ]
+    },
+    {
+      n: 8, name: "Deployment and iteration", profile: "Leans autonomous for execution, intervention for judgement",
+      baseline: "Baseline not reached. Classified from slice 1's external evidence, slice 2's deploy mechanics and slice 3's SOCI finding; unvalidated.",
+      shape: "Preview and roll out behind controllers, a human promotes, AI summarises signals, humans own incidents, and the learning is written back into context for the next cycle.",
+      also: "Release notes, change ticket and CAB alignment, retailer notification and API-doc publish (story B), on-call handover, SLO and error-budget review, missed-appointment and rebate reporting (story A), post-release feedback, flag decommissioning.",
+      asis: "A release is scheduled, approved through a change process, deployed by a pipeline or ops team, monitored by whoever is on call. Post-incident documents are read once. Pain, if confirmed: change process and delivery cadence run on different clocks. Unvalidated; the workshop never reached deployment.",
+      tasks: [
+        { id: "8.1", name: "Preview deployment on every PR", colour: "Green", actor: "Hook", holder: "Hook (CI, hosting platform)",
+          do: ["The hosting platform deploys a preview for every PR and posts the URL."],
+          gate: "Preview URL posted on the PR.",
+          moves: "Green; in force in this repo through the hosting platform.",
+          example: "", modules: ["6.6"] },
+        { id: "8.2", name: "Progressive rollout", colour: "Green", actor: "Hook", holder: "Hook (rollout controller)",
+          do: ["Decouple deploy from release with feature flags.", "Ramp exposure through canary rings.", "Roll back automatically on a metric threshold, with no human in the loop."],
+          gate: "Success-rate and latency thresholds hold at each ring.",
+          moves: "Green only behind a deterministic controller. This repo has none: merge is deploy and rollback is a person promoting a previous deployment (module 6.6), so today the row is amber in practice.",
+          example: "Story A: the rebate-relevant change rolls to one ring first and the metric watched is missed-appointment rate, because that is the number the undertaking prices.", modules: ["6.6"] },
+        { id: "8.3", name: "Production promotion approval", colour: "Red", actor: "Human", holder: "Human (release owner; regulated where SOCI applies)",
+          do: ["Release owner approves promotion, with a rollback plan written first.", "Where the asset is critical infrastructure, the approval sits inside the written risk management program (SOCI Act).", "Record the approval against the release."],
+          gate: "Approval recorded against the release.",
+          moves: "Nothing moves it. Google gates it behind role-based approvals; Microsoft requires the rollback plan first.",
+          example: "Story B: the retailer notification, the API-doc publish and the deploy are one release event under this approval.", modules: ["6.6", "6.12"] },
+        { id: "8.4", name: "Monitoring and alert triage", colour: "Amber", actor: "Agent", holder: "AI summarises signals, human decides", tp: ["review"],
+          do: ["AI summarises dashboards and correlates alerts.", "A human dispositions every alert."],
+          gate: "Every alert has a human disposition.",
+          moves: "Stays amber. Toward green only for alerts a deterministic rule can already route.",
+          example: "" },
+        { id: "8.5", name: "Incident response and post-incident review", colour: "Red", actor: "Human", holder: "Human",
+          do: ["Respond.", "Write the blameless post-incident record.", "Report incidents where SOCI requires it."],
+          gate: "Blameless post-incident record written.",
+          moves: "Nothing moves it. Red in every source.",
+          example: "" },
+        { id: "8.6", name: "Fold the learning back into context", colour: "Amber", actor: "Agent", holder: "AI drafts the update, human approves",
+          do: ["When a rule, a token or a standard is learned in production, have the agent draft the update to the rules file, skill, design system or ADR.", "Review and merge it like code.", "It goes in the repo, not in someone's chat history."],
+          gate: "The update is merged in the repo.",
+          moves: "This task is what backs the migration claim: the write-back is how a stage earns a greener colour next cycle. It closes the loop back to 1.1.",
+          example: "The brand-colours fix and Team 6's accessibility skill are both instances of this task.", modules: ["6.7", "6.11"] }
+      ]
+    }
+  ],
+  modules: [
+    { id: "6.1", slice: "Build (slice 2)", name: "Issue to branch", gate: "Human (Definition of Ready is a checklist a person walks)", rows: ["5.3", "6.1"],
+      what: "The issue and a committed acceptance-criteria file exist before any agent touches anything; prompts point at the file by name.",
+      changed: "The pattern came from the workshop floor, and it makes Git the shared memory the chat tool does not provide." },
+    { id: "6.2", slice: "Build (slice 2)", name: "How a commit is done", gate: "Hook for format, human for size and boundary", rows: ["6.2"], tp: ["authorship"],
+      what: "Conventional Commits by a lefthook commit-msg hook; one logical change per commit as a human rule with the reviewer as its check; the co-author trailer as the smallest provenance record.",
+      changed: "Every commit on our main had a human author and no trailer, so the 'live example' was a live example of absence." },
+    { id: "6.3", slice: "Build (slice 2)", name: "How branches become merges", gate: "CI check and human", rows: ["6.3", "6.4", "6.5"], tp: ["review"],
+      what: "PR template, four CI jobs, non-author approval, the agent answering review comments on the same branch; what a reviewer checks first on an agent diff.",
+      changed: "Branch protection was documented and not in force; the reconciliation starts there." },
+    { id: "6.4", slice: "Build (slice 2)", name: "How harnesses are used", gate: "Hook, CI check, human for adequacy", rows: ["7.1", "7.2", "7.3", "7.4", "7.5"], tp: ["review"],
+      what: "Two hook layers (git and agent), the deny list, CI, mutation testing as the answer to 'are the tests correct', two sub-agents that are assists and not gates.",
+      changed: "The green suite that tests nothing is the specific failure a sub-agent cannot catch." },
+    { id: "6.5", slice: "Build (slice 2)", name: "Design-system enforcement in build", gate: "CI check (screenshot diff, axe) and human (the designer reviews a diff, not a screen)", rows: ["4.4", "4.5", "4.6", "4.7"],
+      what: "Tokens as the rule set, the overlay-diff check as a Playwright visual comparison, the axe scan, the accessibility skill as the amber assist, the regulatory rule ahead of design.",
+      changed: "Generation is the wrong tool for enforcing a deterministic system; the fix for the wrong colours went into the context, not the slide." },
+    { id: "6.6", slice: "Build (slice 2)", name: "Deploy mechanics", gate: "Human (merge approval, manual rules deploy, revert) and CI check", rows: ["8.1", "8.2", "8.3"],
+      what: "Merge is deploy because the hosting platform has no gate of its own; the Firestore rules workflow is out of use; rollback is a person promoting a previous deployment.",
+      changed: "The last human decision before production in this repository is the PR approval." },
+    { id: "6.7", slice: "Governance (slice 3)", name: "Collaboration with an agent in the loop", gate: "Human throughout; the accessibility skill is an assist and the axe scan behind it is the CI check", rows: ["2.5", "4.3", "4.6", "8.6"], tp: ["review"],
+      what: "Four workshop patterns (acceptance criteria as a shared artifact in version control, the screenshot as the specification, skeleton first then pipeline the pages, a review finding encoded as a skill), each with the NBN constraint it has to survive.",
+      changed: "Parallelism came from the repository, and the team that pipelined its pages paid for it in review time." },
+    { id: "6.8", slice: "Governance (slice 3)", name: "Guardrails: what holds and what only shapes", gate: "Hook and CI check for pattern-matchable rules, human for judgement, an explicit 'no gate' label for anything that lives only in a prompt", rows: ["every holder column"],
+      what: "Every control states its holder; a document naming a skill or rules file as a control is sent back. Anything that must hold moves into a hook, where it costs no context.",
+      changed: "The one test a junior needs for any rule in a policy: if the model ignores this, what happens?" },
+    { id: "6.9", slice: "Governance (slice 3)", name: "Token accounting and cost", gate: "Human; the platform quota is the only hard stop and it arrives with no warning", rows: ["3.5"], tp: ["tokens"],
+      what: "Three numbers per task in the spike log: generating time, reviewing time, tokens consumed. Chat during exploration, documents at handover. A register of who owns each AI use and what it consumes.",
+      changed: "The certification says nothing about cost, so this is built from the workshop record and the team's own spike; the review-time figure is what makes the decision-load problem visible." },
+    { id: "6.10", slice: "Governance (slice 3)", name: "Liability, provenance and code authorship", gate: "Human, backed by one hook the repository could add in an afternoon (commit-msg check refusing an agent commit without a trailer)", rows: ["6.3", "6.4"], tp: ["authorship"],
+      what: "Provenance from smallest to largest: the trailer, the confidence card on the PR, the nutrition label that does not exist yet. Authorship as four names. Copyright and licence in agent-written code open for counsel.",
+      changed: "None of the mechanics is switched on in our repository today." },
+    { id: "6.11", slice: "Governance (slice 3)", name: "Prompt practice: written, stored, versioned, shared", gate: "Human review on the PR and the CI check that already runs on every file", rows: ["5.3", "8.6"],
+      what: "A prompt that matters is a file; the repo has five kinds (CLAUDE.md, skills, agent definitions, the PR template, acceptance files). Files go through the same PR and review as code. Shared as project skill, then plugin.",
+      changed: "The thirty-five-file change and the prompt that worked once and was never seen again are the same failure: the absence of the file." },
+    { id: "6.12", slice: "Governance (slice 3)", name: "Regulatory codification for NBN Co", gate: "Human for five of seven rules, hook or CI check for two", rows: ["4.7", "8.3", "A4"],
+      what: "NBN Co is a corporate Commonwealth entity, so the Commonwealth AI policy (v2.0, 15 Dec 2025) is a model, not an obligation. Seven rules with holders: Privacy Act, register and owner, human oversight, SOCI Act on deploys, DDA and WCAG, First Nations (Stretch RAP VI), Statement of Expectations security.",
+      changed: "The first thing on the list of what binds NBN Co is an absence." }
+  ]
+};
+
+</script>
+<script>
+(function () {
+  const $ = (s, r = document) => r.querySelector(s);
+  const el = (tag, attrs = {}, ...kids) => {
+    const e = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === "class") e.className = v; else if (k === "html") e.innerHTML = v; else e.setAttribute(k, v);
+    }
+    for (const k of kids) if (k != null) e.append(k);
+    return e;
+  };
+  const chip = c => el("span", { class: "chip " + c }, c);
+  const ICONS = {"Human": "<svg width=\"15\" height=\"15\" fill=\"currentColor\" viewBox=\"0 0 16 16\"><path d=\"M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z\"/></svg>", "Agent": "<svg width=\"15\" height=\"15\" fill=\"currentColor\" viewBox=\"0 0 16 16\"><path d=\"M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135\"/><path d=\"M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5\"/></svg>", "Sub-agent": "<svg width=\"15\" height=\"15\" fill=\"currentColor\" viewBox=\"0 0 16 16\"><path fill-rule=\"evenodd\" d=\"M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z\"/></svg>", "Hook": "<svg width=\"15\" height=\"15\" fill=\"currentColor\" viewBox=\"0 0 16 16\"><path d=\"M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56\"/><path d=\"M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0\"/></svg>"};
+  const actorIcon = a => { const w = el("span", { class: "ic", title: a + ". " + MAP.actors[a], html: ICONS[a] }); w.append(el("span", { class: "sr" }, a)); return w; };
+  const actorBadge = a => el("span", { class: "actor " + a }, actorIcon(a), " ", a);
+  const tpBadge = k => el("span", { class: "tpw " + k, title: MAP.touchpoints[k].text }, MAP.touchpoints[k].label.toLowerCase());
+  const taskById = {};
+  MAP.stages.forEach(s => s.tasks.forEach(t => { taskById[t.id] = t; t.stage = s; }));
+  // module pins derived from module rows too, so both directions agree
+  MAP.modules.forEach(m => m.rows.forEach(r => { if (taskById[r]) { taskById[r].modules = taskById[r].modules || []; if (!taskById[r].modules.includes(m.id)) taskById[r].modules.push(m.id); } }));
+
+  // legend
+  for (const [c, t] of Object.entries(MAP.colours)) $("#legend-colours").append(el("li", {}, chip(c), " ", t));
+  for (const [a, t] of Object.entries(MAP.actors)) $("#legend-actors").append(el("li", {}, actorBadge(a), ". ", t));
+  for (const [k, v] of Object.entries(MAP.touchpoints)) $("#legend-tp").append(el("li", {}, el("b", {}, v.label + ". "), v.text, " On a row: ", tpBadge(k), "."));
+  for (const [k, v] of MAP.rules) $("#legend-rules").append(el("li", {}, el("b", {}, k + ". "), v));
+
+  // tallies
+  const tally = s => { const t = { Red: 0, Amber: 0, Green: 0 }; s.tasks.forEach(x => t[x.colour]++); return t; };
+
+  // cycle SVG
+  (function drawCycle() {
+    const W = 1000, H = 680, cx = 500, cy = 340, RX = 388, RY = 258, bw = 192, bh = 92;
+    const ns = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", "Eight lifecycle stages arranged in a clockwise cycle, stage 8 feeding back into stage 1");
+    svg.innerHTML = `<defs>
+      <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ff5c8a"/></marker>
+      <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8f7bff"/><stop offset="1" stop-color="#ff5c8a"/></linearGradient>
+      <linearGradient id="bandgrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6b5cff"/><stop offset="1" stop-color="#ff5c8a"/></linearGradient>
+      <radialGradient id="centre" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#a596ff"/><stop offset=".6" stop-color="#6b5cff"/><stop offset="1" stop-color="#4a3bd6"/></radialGradient>
+      <filter id="soft" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#2d266e" flood-opacity="0.12"/></filter>
+    </defs>`;
+    const n = MAP.stages.length;
+    const ang = i => -Math.PI / 2 + (i / n) * 2 * Math.PI;
+    const pt = a => ({ x: cx + RX * Math.cos(a), y: cy + RY * Math.sin(a) });
+    for (let i = 0; i < n; i++) {
+      const pad = 0.29;
+      const s = ang(i) + pad, e = ang(i + 1) - pad;
+      const p1 = pt(s), p2 = pt(e);
+      const path = document.createElementNS(ns, "path");
+      path.setAttribute("d", `M${p1.x.toFixed(1)},${p1.y.toFixed(1)} A${RX},${RY} 0 0 1 ${p2.x.toFixed(1)},${p2.y.toFixed(1)}`);
+      path.setAttribute("class", "arrow" + (i === n - 1 ? " loop" : ""));
+      svg.append(path);
+    }
+    // centre tile
+    const total = MAP.stages.reduce((a, s) => a + s.tasks.length, 0);
+    const c = document.createElementNS(ns, "circle"); c.setAttribute("cx", cx); c.setAttribute("cy", cy); c.setAttribute("r", 112); c.setAttribute("fill", "url(#centre)"); c.setAttribute("filter", "url(#soft)"); svg.append(c);
+    const ct = (dy, txt, cls) => { const t = document.createElementNS(ns, "text"); t.setAttribute("class", cls); t.setAttribute("x", cx); t.setAttribute("y", cy + dy); t.textContent = txt; svg.append(t); };
+    ct(-38, "TASKS ON THE MAP", "centre-k"); ct(22, String(total), "centre-big"); ct(56, "HUMAN · AI · HUMAN", "centre-k");
+    const wrap = (str, max) => { const out = []; let line = ""; str.split(" ").forEach(w => { if ((line + " " + w).trim().length > max && line) { out.push(line); line = w; } else line = (line + " " + w).trim(); }); if (line) out.push(line); return out; };
+    const cols = { Red: "#ff5c8a", Amber: "#ffb04a", Green: "#3ec98a" };
+    MAP.stages.forEach((s, i) => {
+      const { x, y } = pt(ang(i));
+      const g = document.createElementNS(ns, "g");
+      g.setAttribute("class", "stage-node"); g.setAttribute("tabindex", "0"); g.setAttribute("role", "link");
+      g.setAttribute("aria-label", `Open stage ${s.n}, ${s.name}`);
+      const t = tally(s);
+      const lines = wrap(s.name, 18);
+      const x0 = x - bw / 2, y0 = y - bh / 2;
+      // tally: three mini bars scaled to task count, with counts
+      const bx = x0 + 14, by = y0 + 68, unit = 11;
+      const bars = ["Red", "Amber", "Green"].map((cname, k) => { const w = Math.max(6, t[cname] * unit); const xx = bx + k * 58; return `<g class="tally"><rect x="${xx}" y="${by}" width="${w}" height="9" fill="${cols[cname]}"/><text x="${xx + w + 4}" y="${by + 8}" font-size="10" font-weight="700" fill="${cols[cname]}">${t[cname]}</text></g>`; }).join("");
+      g.innerHTML = `<rect class="card" x="${x0}" y="${y0}" width="${bw}" height="${bh}" rx="16"/>
+        <rect class="band" x="${x0 + 14}" y="${y0 + 14}" width="6" height="34" rx="3"/>
+        <text class="num" x="${x0 + 30}" y="${y0 + 40}">${s.n}</text>
+        ${lines.map((l, k) => `<text class="nm" x="${x0 + 66}" y="${y0 + 28 + k * 15}">${l}</text>`).join("")}
+        <text class="prof" x="${x0 + 14}" y="${y0 + 58}">${s.profile.split(",")[0]}</text>
+        ${bars}`;
+      const open = () => { const d = document.getElementById("stage-" + s.n); d.open = true; d.scrollIntoView({ behavior: "smooth", block: "start" }); };
+      g.addEventListener("click", open); g.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); open(); } });
+      svg.append(g);
+    });
+    $("#cycle").append(svg);
+  })();
+
+  // stages
+  const root = $("#stages-root");
+  MAP.stages.forEach(s => {
+    const t = tally(s);
+    const d = el("details", { class: "stage tint-" + ((s.n - 1) % 5), id: "stage-" + s.n });
+    const sum = el("summary", {},
+      el("div", { class: "n" }, String(s.n)),
+      el("div", {}, el("div", { class: "t" }, s.name), el("div", { class: "p" }, "Profile: " + s.profile.toLowerCase() + ". " + s.tasks.length + " tasks.")),
+      (() => { const w = el("div", { class: "tallies" }); const bar = el("div", { class: "mixbar" }); for (const c of ["Red", "Amber", "Green"]) { const sp = el("span", { class: c[0] }); sp.style.width = (100 * t[c] / s.tasks.length).toFixed(1) + "%"; bar.append(sp); } w.append(bar, el("div", { class: "mixlabels" }, el("span", {}, t.Red + " red"), el("span", {}, t.Amber + " amber"), el("span", {}, t.Green + " green"))); return w; })(),
+      el("div", { class: "open-hint" }, "Open to see the tasks, who acts on each, and what to do.")
+    );
+    const body = el("div", { class: "stage-body" });
+    body.append(el("div", { class: "intro" },
+      el("div", {}, el("span", { class: "k" }, "Where the baseline stood, and what the testing found"), s.baseline),
+      el("div", {}, el("span", { class: "k" }, "Shape of the stage"), s.shape),
+      el("div", {}, el("span", { class: "k" }, "Also in this stage, human-led with AI drafting where the evidence rule allows"), s.also),
+      el("div", {}, el("span", { class: "k" }, "As is at NBN today"), s.asis)
+    ));
+    if (s.notdone) body.append(el("div", { class: "notdone" }, s.notdone));
+    body.append(el("h3", {}, "Tasks, in order"));
+    s.tasks.forEach(tk => {
+      const td = el("details", { class: "task " + tk.colour, id: "task-" + tk.id.replace(".", "-") });
+      const badges = el("div", { class: "badges" }, actorIcon(tk.actor));
+      (tk.tp || []).forEach(k => badges.append(tpBadge(k)));
+      td.append(el("summary", {}, el("div", { class: "id", title: tk.colour }, tk.id, el("span", { class: "sr" }, ", " + tk.colour.toLowerCase())), el("div", { class: "nm" }, tk.name), badges));
+      const left = el("div", {});
+      left.append(el("span", { class: "k" }, "What to do"));
+      const ol = el("ol", {}); tk.do.forEach(step => ol.append(el("li", {}, step))); left.append(ol);
+      left.append(el("span", { class: "k" }, "Gate: what has to be true before the next task starts"), el("div", {}, tk.gate));
+      if (tk.example) left.append(el("span", { class: "k" }, "Worked example"), el("div", {}, tk.example));
+      const right = el("div", { class: "right" });
+      right.append(el("span", { class: "k" }, "Who or what acts"), el("div", {}, actorBadge(tk.actor), " ", tk.holder));
+      right.append(el("span", { class: "k" }, "Colour, and what would move it"), el("div", {}, chip(tk.colour), " ", tk.moves));
+      if (tk.tp && tk.tp.length) {
+        right.append(el("span", { class: "k" }, "Governance touchpoints"));
+        tk.tp.forEach(k => right.append(el("div", {}, el("b", {}, MAP.touchpoints[k].label + ". "), MAP.touchpoints[k].text)));
+      }
+      if (tk.modules && tk.modules.length) {
+        right.append(el("span", { class: "k" }, "Modules pinned here"));
+        const pins = el("div", { class: "pins" });
+        tk.modules.sort((a, b) => parseInt(a.split(".")[1]) - parseInt(b.split(".")[1])).forEach(mid => { const m = MAP.modules.find(x => x.id === mid); pins.append(el("a", { class: "pin", href: "#module-" + mid.replace(".", "-") }, mid + " " + m.name)); });
+        right.append(pins);
+      }
+      td.append(el("div", { class: "task-body" }, left, right));
+      body.append(td);
+    });
+    d.append(sum, body);
+    root.append(d);
+  });
+
+  // modules
+  const strip = $("#modstrip"), mroot = $("#modules-root");
+  MAP.modules.forEach(m => {
+    strip.append(el("a", { href: "#module-" + m.id.replace(".", "-") }, el("b", {}, m.id), m.name));
+    const d = el("details", { class: "module", id: "module-" + m.id.replace(".", "-") });
+    const badges = el("div", { class: "badges" }); (m.tp || []).forEach(k => badges.append(tpBadge(k)));
+    d.append(el("summary", {}, el("div", { class: "id" }, m.id), el("div", {}, el("div", { class: "nm" }, m.name), el("div", { class: "sl" }, m.slice)), badges));
+    const b = el("div", { class: "module-body" });
+    b.append(el("span", { class: "k" }, "What it is"), el("div", {}, m.what));
+    b.append(el("span", { class: "k" }, "Gate mechanism (D1 section 3)"), el("div", {}, m.gate));
+    b.append(el("span", { class: "k" }, "Map rows it governs"));
+    const pins = el("div", { class: "pins" });
+    m.rows.forEach(r => { if (taskById[r]) pins.append(el("a", { class: "pin", href: "#task-" + r.replace(".", "-") }, r + " " + taskById[r].name)); else pins.append(el("span", { class: "pin" }, r)); });
+    b.append(pins);
+    b.append(el("span", { class: "k" }, "What it changed in the team's thinking"), el("div", {}, m.changed));
+    d.append(b); mroot.append(d);
+  });
+
+  // stories and assumptions
+  const sr = $("#stories-root");
+  [["Story A", MAP.stories.A.replace(/^Story A, /, "")], ["Story B", MAP.stories.B.replace(/^Story B, /, "")], ["Base case", MAP.stories.base.replace(/^Base case: /, "")]].forEach(([h, t]) => sr.append(el("div", { class: "story" }, el("b", {}, h), t)));
+  const at = $("#assumptions");
+  at.append(el("tr", {}, el("th", {}, "Rule"), el("th", {}, "Statement")));
+  MAP.assumptions.forEach(([k, v]) => at.append(el("tr", {}, el("td", {}, el("b", {}, k)), el("td", {}, v))));
+
+  // pins open their target
+  document.addEventListener("click", ev => {
+    const a = ev.target.closest("a[href^='#']"); if (!a) return;
+    const target = document.getElementById(a.getAttribute("href").slice(1)); if (!target) return;
+    let p = target; while (p) { if (p.tagName === "DETAILS") p.open = true; p = p.parentElement; }
+  });
+  // toolbar
+  const setAll = v => document.querySelectorAll("details").forEach(d => d.open = v);
+  document.querySelectorAll(".toolbar button").forEach(b => b.addEventListener("click", () => {
+    const a = b.dataset.act; if (a === "openall") setAll(true); else if (a === "closeall") setAll(false); else { setAll(true); window.print(); }
+  }));
+  window.addEventListener("beforeprint", () => setAll(true));
+  if (location.search.includes("print") || location.hash === "#all") setAll(true);
+  else if (location.hash) { const t = document.getElementById(location.hash.slice(1)); let p = t; while (p) { if (p.tagName === "DETAILS") p.open = true; p = p.parentElement; } }
+})();
+</script>
+</body>
+</html>

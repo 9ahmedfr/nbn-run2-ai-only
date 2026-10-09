@@ -1,0 +1,51 @@
+packages:
+  - 'frontend'
+  - 'backend'
+
+overrides:
+  # firebase-functions pulls in @types/express@4 transitively, which conflicts
+  # with our own @types/express@^5 (backend uses Express 5) and causes
+  # environment-dependent type errors depending on how pnpm hoists the two
+  # versions. Force one version everywhere.
+  '@types/express': '^5.0.1'
+
+  # next@16.2.12 still bundles its own old postcss internally (separate from
+  # the patched one Tailwind/Vite already use) — force it to a patched
+  # version too. postcss 8.x is backward-compatible within the major.
+  postcss: '^8.5.18'
+
+  # next also bundles an old sharp (image optimization) — force the patched line.
+  sharp: '^0.35.4'
+
+  # js-yaml (CVE-2026-59870) and nanoid highs from `pnpm audit` are disabled
+  # here — see README.md § Security for the manual fix.
+  js-yaml: 4.3.2
+  nanoid: '^3.3.18'
+  uuid: '>=11.1.1'
+
+  'brace-expansion@<1.1.21': '1.1.21'
+  'brace-expansion@>=2.0.0 <2.1.7': '2.1.7'
+  'brace-expansion@>=4.0.0 <5.0.12': '5.0.12'
+
+  '@grpc/grpc-js@<1.13.6': '1.13.6'
+  '@grpc/grpc-js@>=1.14.0 <1.14.5': '1.14.5'
+
+  'qs@<6.16.0': '6.16.0'
+  'ip-address@<=10.7.0': '10.7.1'
+
+  '@fastify/busboy': '3.2.1'
+
+allowBuilds:
+  '@firebase/util': true
+  esbuild: true
+  lefthook: true
+  protobufjs: true
+  sharp: true
+  unrs-resolver: true
+
+minimumReleaseAgeExclude:
+  - '@fastify/busboy@3.2.1'
+
+auditConfig:
+  ignoreGhsas:
+    - GHSA-vfj7-8cjw-p6xm
