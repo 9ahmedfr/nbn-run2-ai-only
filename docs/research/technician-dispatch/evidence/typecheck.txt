@@ -1,0 +1,6 @@
+$ pnpm -r typecheck
+Scope: 2 of 3 workspace projects
+frontend typecheck$ tsc --noEmit
+backend typecheck$ tsc --noEmit
+backend typecheck: Done
+frontend typecheck: Done

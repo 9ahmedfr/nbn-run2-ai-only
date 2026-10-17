@@ -1,0 +1,23 @@
+$ pnpm run test && pnpm run test:component
+$ pnpm --filter backend test
+$ vitest run tests/unit
+
+ RUN  v4.1.11 /Users/9ahmedfr/github-personal/nbn-run2-ai-only/backend
+
+
+ Test Files  2 passed (2)
+      Tests  5 passed (5)
+   Start at  00:02:16
+   Duration  286ms (transform 39ms, setup 22ms, import 110ms, tests 17ms, environment 0ms)
+
+$ pnpm --filter frontend test
+$ vitest run
+
+ RUN  v4.1.11 /Users/9ahmedfr/github-personal/nbn-run2-ai-only/frontend
+
+
+ Test Files  3 passed (3)
+      Tests  17 passed (17)
+   Start at  00:02:17
+   Duration  1.22s (transform 124ms, setup 333ms, import 200ms, tests 570ms, environment 828ms)
+
