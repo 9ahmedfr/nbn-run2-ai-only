@@ -48,7 +48,7 @@
 
 ## Trial evidence status
 
-- T2-AC15 working preview: pending the Vercel preview created from the pull request.
+- T2-AC15 working preview: pass — [Vercel technician-dispatch preview](https://nbn-run2-ai-only-git-featur-2d4761-ahmedfrahuman-9613s-projects.vercel.app/dispatch) is linked from pull request #10. Vercel project access controls apply.
 - T2-AC16 criterion results recorded: pass; T2-AC01 through T2-AC14 are recorded above.
 - T2-AC17 run details recorded: pass; builder, repository, start commit, method, tool/model and elapsed time are recorded above.
 
