@@ -15,16 +15,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: `%s | ${process.env.NEXT_PUBLIC_APP_NAME ?? 'App'}`,
-    default: process.env.NEXT_PUBLIC_APP_NAME ?? 'App',
+    template: `%s | ${process.env.NEXT_PUBLIC_APP_NAME ?? 'ServiceLink'}`,
+    default: process.env.NEXT_PUBLIC_APP_NAME ?? 'ServiceLink',
   },
-  description: 'Built on garage-boilerplate',
+  description: 'Technician dispatch matching and scheduling.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
+      <body className="flex min-h-full flex-col">
         <Providers>{children}</Providers>
       </body>
     </html>
