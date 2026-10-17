@@ -1,0 +1,20 @@
+{
+  "_about": "Synthetic fixture data for trial two, taken from docs/research/trial-two/attacks-and-test-jobs.md sections 3a to 3c (Zac Clarkson, 17 Oct 2026). Identical in all three build repositories. It supplies values the frozen criteria leave open and adds no required behaviour.",
+  "faults": [
+    { "id": "F1", "name": "No connection at the premises" },
+    { "id": "F2", "name": "Intermittent speed drop" },
+    { "id": "F3", "name": "Network termination device not powering on" }
+  ],
+  "equipment": ["ladder", "elevated-work-platform", "pit-access"],
+  "accessRequirements": [
+    { "id": "R0", "name": "None (ground floor, no pit)", "satisfiedBy": [[]] },
+    { "id": "R1", "name": "Second storey", "satisfiedBy": [["ladder"], ["elevated-work-platform"]] },
+    { "id": "R2", "name": "Pit job", "satisfiedBy": [["pit-access"]] }
+  ],
+  "technicians": [
+    { "id": "T1", "name": "Tech Alpha", "faults": ["F1"], "equipment": ["ladder"] },
+    { "id": "T2", "name": "Tech Bravo", "faults": ["F3"], "equipment": ["elevated-work-platform", "pit-access"] },
+    { "id": "T3", "name": "Tech Charlie", "faults": ["F2"], "equipment": [] },
+    { "id": "T4", "name": "Tech Delta", "faults": ["F1"], "equipment": [] }
+  ]
+}
